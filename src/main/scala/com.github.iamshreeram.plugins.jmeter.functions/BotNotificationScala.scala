@@ -41,6 +41,9 @@ class BotNotificationScala extends AbstractFunction {
   @throws[InvalidVariableException]
   override def setParameters(parameters: util.Collection[CompoundVariable]): Any =
     {
+      // This is not working when we build. Need to check
+      // Need to return Array instead of Any
+
       return parameters.asScala
       //return parameters.size()
       //values = parameters.toArray
