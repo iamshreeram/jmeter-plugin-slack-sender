@@ -21,7 +21,7 @@ object BotNotificationScala {
 }
 
 class BotNotificationScala extends AbstractFunction {
-  private var values = null
+  private var values:Array[AnyRef] = null
 
   override def getArgumentDesc: util.List[String] = BotNotificationScala.desc
 
@@ -35,17 +35,8 @@ class BotNotificationScala extends AbstractFunction {
            api.call(new SlackMessage(message));
            */ "Yet to enable bot notification"
   }
-
   override def getReferenceKey: String = BotNotificationScala.MyFunctionName
 
   @throws[InvalidVariableException]
-  override def setParameters(parameters: util.Collection[CompoundVariable]): Any =
-    {
-      // This is not working when we build. Need to check
-      // Need to return Array instead of Any
-
-      return parameters.asScala
-      //return parameters.size()
-      //values = parameters.toArray
-    }
+  override def setParameters(parameters: util.Collection[CompoundVariable]): Unit =  values = parameters.toArray
 }
