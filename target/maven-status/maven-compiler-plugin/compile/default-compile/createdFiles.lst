@@ -1,2 +1,10 @@
+com\github\iamshreeram\plugins\jmeter\slack\SlackActionStyle.class
+com\github\iamshreeram\plugins\jmeter\slack\SlackMessage.class
+com\github\iamshreeram\plugins\jmeter\slack\SlackAttachment.class
+com\github\iamshreeram\plugins\jmeter\slack\SlackAction.class
+com\github\iamshreeram\plugins\jmeter\slack\SlackApi.class
+com\github\iamshreeram\plugins\jmeter\slack\SlackField.class
+com\github\iamshreeram\plugins\jmeter\slack\SlackActionType.class
+com\github\iamshreeram\plugins\jmeter\slack\SlackException.class
 com\github\iamshreeram\plugins\jmeter\functions\BotNotification.class
 com\github\iamshreeram\plugins\jmeter\functions\WebhookNotification.class
