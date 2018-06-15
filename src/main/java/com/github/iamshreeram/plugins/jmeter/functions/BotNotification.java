@@ -13,8 +13,8 @@ import org.apache.jmeter.samplers.Sampler;
 import org.apache.jmeter.threads.JMeterVariables;
 
 
-import net.gpedro.integrations.slack.SlackApi;
-import net.gpedro.integrations.slack.SlackMessage;
+import com.github.iamshreeram.plugins.jmeter.slack.SlackApi;
+import com.github.iamshreeram.plugins.jmeter.slack.SlackMessage;
 
 public class BotNotification extends AbstractFunction {
 

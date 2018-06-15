@@ -4,8 +4,9 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.gpedro.integrations.slack.SlackApi;
-import net.gpedro.integrations.slack.SlackMessage;
+import com.github.iamshreeram.plugins.jmeter.slack.SlackApi;
+import com.github.iamshreeram.plugins.jmeter.slack.SlackMessage;
+
 import org.apache.jmeter.engine.util.CompoundVariable;
 import org.apache.jmeter.functions.AbstractFunction;
 import org.apache.jmeter.functions.InvalidVariableException;
