@@ -34,17 +34,14 @@
 
 	<!-- Details of Source Code Management -->
 	<scm>
-		<connection>scm:git:git://github.com/iamshreeram/executor-service.git</connection>
-		<developerConnection>scm:git:ssh://github.com:iamshreeram/executor-service.git</developerConnection>
-		<url>http://github.com/iamshreeram/executor-service/tree/master</url>
+		<connection>scm:git:git://github.com/iamshreeram/jmeter-plugin-slack-sender.git</connection>
+		<developerConnection>scm:git:ssh://github.com:iamshreeram/jmeter-plugin-slack-sender.git</developerConnection>
+		<url>http://github.com/iamshreeram/jmeter-plugin-slack-sender/tree/master</url>
 	</scm>
-
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <slack-java-webhook.version>0.0.9</slack-java-webhook.version>
     </properties>
 
     <dependencies>
@@ -52,16 +49,6 @@
             <groupId>org.apache.jmeter</groupId>
             <artifactId>ApacheJMeter_core</artifactId>
             <version>3.3</version>
-        </dependency>
-        <dependency>
-            <groupId>in.ashwanthkumar</groupId>
-            <artifactId>slack-java-webhook</artifactId>
-            <version>${slack-java-webhook.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>net.gpedro.integrations.slack</groupId>
-            <artifactId>slack-webhook</artifactId>
-            <version>1.4.0</version>
         </dependency>
         <dependency>
             <groupId>org.scala-lang</groupId>
