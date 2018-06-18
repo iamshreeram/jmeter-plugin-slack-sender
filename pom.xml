@@ -9,6 +9,38 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <!-- Details of project -->
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>Rest application to execute commands in any machine</description>
+	<url>https://github.com/iamshreeram/executor-service</url>
+
+	<licenses>
+        <license>
+            <name>Apache2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+
+	<!-- Details of Developer -->
+	<developers>
+        <developer>
+            <email>shreeram.v@live.com</email>
+            <name>Shreeram Vaidhyanathan</name>
+            <url>https://shreeram.us</url>
+            <id>iamshreeram</id>
+        </developer>
+	</developers>
+
+	<!-- Details of Source Code Management -->
+	<scm>
+		<connection>scm:git:git://github.com/iamshreeram/executor-service.git</connection>
+		<developerConnection>scm:git:ssh://github.com:iamshreeram/executor-service.git</developerConnection>
+		<url>http://github.com/iamshreeram/executor-service/tree/master</url>
+	</scm>
+
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
@@ -43,6 +75,18 @@
             <version>2.8.5</version>
         </dependency>
     </dependencies>
+
+    <!-- URL for Maven central repository -->
+	<distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+	</distributionManagement>
 
     <build>
         <plugins>
