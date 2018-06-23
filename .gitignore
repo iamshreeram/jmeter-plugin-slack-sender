@@ -10,6 +10,7 @@
 .idea/**/tasks.xml
 .idea/dictionaries
 
+
 # Sensitive or high-churn files:
 .idea/**/dataSources/
 .idea/**/dataSources.ids
@@ -107,6 +108,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Extra and Misc files
+.target/*
+.idea/*
 
 
 # End of https://www.gitignore.io/api/java,windows,intellij+iml
