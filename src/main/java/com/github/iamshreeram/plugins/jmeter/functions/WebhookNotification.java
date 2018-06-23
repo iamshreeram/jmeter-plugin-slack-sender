@@ -41,6 +41,7 @@ public class WebhookNotification extends AbstractFunction {
         JMeterVariables vars = getVariables();
         String webhookUrl = ((CompoundVariable) values[0]).execute();
         String message = ((CompoundVariable) values[1]).execute();
+
         if (isNullOrBlank(webhookUrl) && isNullOrBlank(message)  ) {
             SlackApi api = new SlackApi(webhookUrl);
             try {
