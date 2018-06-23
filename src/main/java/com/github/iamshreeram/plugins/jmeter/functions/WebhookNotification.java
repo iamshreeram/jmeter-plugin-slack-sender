@@ -30,15 +30,29 @@ public class WebhookNotification extends AbstractFunction {
         return desc;
     }
 
+    private static boolean isNullOrBlank(String s)
+    {
+        return (s==null || s.trim().equals(""));
+    }
+
 
     @Override
     public String execute(SampleResult arg0, Sampler arg1) throws InvalidVariableException {
         JMeterVariables vars = getVariables();
         String webhookUrl = ((CompoundVariable) values[0]).execute();
         String message = ((CompoundVariable) values[1]).execute();
-        SlackApi api = new SlackApi(webhookUrl);
-        api.call(new SlackMessage(message));
-        return arg0+"+"+arg1;
+        if (isNullOrBlank(webhookUrl) && isNullOrBlank(message)  ) {
+            SlackApi api = new SlackApi(webhookUrl);
+            try {
+                api.call(new SlackMessage(message));
+                return "Success";
+            } catch (Exception exception) {
+                System.out.println("Exception while making slack call : " + exception);
+                return "Failed to call webhook";
+            }
+        } else {
+            return "One or more empty sections";
+        }
     }
 
     @Override
