@@ -6,7 +6,7 @@
 
     <groupId>com.github.iamshreeram.plugins.jmeter.functions</groupId>
     <artifactId>slack-notifier</artifactId>
-    <version>1.0.0</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <!-- Details of project -->
@@ -183,7 +183,7 @@
             </plugin>
 
             <!-- Suspending GPG validation due to Travis-CI build failure -->
-            <!--plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
@@ -196,7 +196,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin-->
+            </plugin>
         </plugins>
 
     </build>
