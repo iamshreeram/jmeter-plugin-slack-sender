@@ -17,6 +17,10 @@ For Maven,
 ```
 
 ## How to use 
+1. Create a Bot user or Incoming Webhook in slack
+2. Get the URL https://hooks.slack.com/services/xxx/yyy/SLACK_TOKEN
+3. Place the jar from maven repo in `lib/ext` of your jmeter bin
+4. Start using below command in beanshell 
 ```
 __WebHookNotify(Webhook url,Message to be sent)
 
