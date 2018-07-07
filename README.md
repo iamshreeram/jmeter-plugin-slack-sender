@@ -1,8 +1,9 @@
+
+# jmeter-plugin : slack-notifier
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.iamshreeram.plugins.jmeter.functions/slack-notifier/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.iamshreeram.plugins.jmeter.functions/slack-notifier)
 [![Build Status](https://travis-ci.org/iamshreeram/jmeter-plugin-slack-sender.svg?branch=master)](https://travis-ci.org/iamshreeram/jmeter-plugin-slack-sender)
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
-# jmeter-plugin : slack-notifier
 Jmeter function to send slack notification 
 
 ## Dependencies
